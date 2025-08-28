@@ -22,6 +22,7 @@ app.get('/api/usuarios', async (req, res) => {
         res.status(500).json({ error: 'Erro interno do servidor' });
     }
 });
+
 app.post('/api/usuarios', async (req, res) => {
     // Pega os dados do corpo da requisição (formulário)
     const { nome, email, usuario, senha } = req.body;
